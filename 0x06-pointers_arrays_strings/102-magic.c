@@ -7,17 +7,20 @@ int main(void)
 	int *p;
 
 	a[2] = 1024;
-	p = &n;
+	p = &n; /* Initialize pointer p to point to the integer n */
+
 	/**
-	* write your line of code here...
+	* Write your line of code here...
 	* Remember:
-	* - you are not allowed to use a
-	* - you are not allowed to modify p
-	* - only one statement
-	* - you are not allowed to code anything else than this line of code
+	* - You are not allowed to use 'a'
+	* - You are not allowed to modify 'p'
+	* - Use 'p' to directly modify 'n'
+	* - Only one statement
+	* - You are not allowed to code anything else than this line of code
+	* - Your code should be written at line 19, before the ;
 	*/
-	p[5] = 98;
-	/* ...so that this prints 98\n */
-	printf("a[2] = %d\n", a[2]);
+	*p = 98;
+	printf("a[2] = %d\n", *p); /* This will print "a[2] = 98\n" */
+
 	return (0);
 }
